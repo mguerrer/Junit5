@@ -16,6 +16,7 @@ public class AnotacionesBasicas {
      
     @Tag("DEV")
     @Test
+    @DisplayName("Suma 2+2 en DEV")
     void testCalcOne()
     {
         System.out.println("======TEST 1 ejecutado=======");
@@ -25,6 +26,7 @@ public class AnotacionesBasicas {
     @Tag("PROD")
     @Disabled
     @Test
+    @DisplayName("Suma 2+4 en PROD")
     void testCalcTwo()
     {
         System.out.println("======TEST 2 ejecutado=======");
