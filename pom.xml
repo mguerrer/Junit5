@@ -61,7 +61,7 @@
                   <version>3.6.3</version>
                 </requireMavenVersion>
               </rules>
-              <fail>true</fail>
+              <fail>false</fail>
             </configuration>
           </execution>
         </executions>
