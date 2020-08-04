@@ -1,6 +1,5 @@
-package cl.set.JUnit5;
+package cl.set.junit5;
 import org.junit.jupiter.api.*;
-
 
 public class AnotacionesBasicas {
     Core calculadora = new Core();

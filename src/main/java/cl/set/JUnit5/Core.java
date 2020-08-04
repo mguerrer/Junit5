@@ -1,4 +1,4 @@
-package cl.set.JUnit5;
+package cl.set.junit5;
 
 public class Core {
     public Core(){

@@ -8,12 +8,14 @@
  * https://junit.org/junit5/docs/snapshot/user-guide/#writing-tests-parameterized-tests-sources-CsvSource
  */
 
-package cl.set.JUnit5;
+package cl.set.junit5;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+
+
 import org.junit.jupiter.params.provider.CsvFileSource;
 
 class TestParametrizados {
