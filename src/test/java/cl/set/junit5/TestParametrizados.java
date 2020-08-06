@@ -27,8 +27,8 @@ class TestParametrizados {
 		assertEquals(2, calculadora.Suma(1, 1), ()-> "1 + 1 debe ser igual a 2");
 	}
 
-	@ParameterizedTest(name = "{0} + {1} = {2}")
 	@DisplayName("Prueba con fuente fija")
+	@ParameterizedTest(name = "{0} + {1} = {2}")
 	@CsvSource({ "0,    1,   1", "1,    2,   3", "49,  51, 100", "1,  100, 101" })
 	void SumaListaDeNumeros(final int primer, final int segundo, final int resultadoEsperado) {
 		final Core calculadora = new Core();
@@ -37,16 +37,16 @@ class TestParametrizados {
 				() -> primer + " + " + segundo + " debe ser igual a " + resultadoEsperado);
 	}
 
-	@ParameterizedTest
 	@DisplayName("Prueba con archivos .csv")
+	@ParameterizedTest (name = "Usuario {0} {1}")
 	@CsvFileSource(resources = "/usuarios.csv", numLinesToSkip = 1)
 	void testWithCsvFileSourceFromFile(final String nombre, final String apellidos) {
-		System.out.println("Usuario:"+nombre+" "+apellidos);
+		System.out.println("Usuario:"+nombre+" "+apellidos );
 		/* Agregue aquí lo que desee hacer con los datos del archivo. */
 	}
 
-	@ParameterizedTest
 	@DisplayName("Prueba con otro archivo .csv delimitado con $")
+	@ParameterizedTest (name = "Libro={0} Autor={1}")
 	@CsvFileSource(resources = "/books.csv", numLinesToSkip = 1, delimiter='$')
 	void testWithOtherCsvFileSourceFromFile(final String nombre, final String autor) {
 		System.out.println("Libro:"+nombre+" Autor:"+autor);
