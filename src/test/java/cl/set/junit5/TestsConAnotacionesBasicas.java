@@ -1,7 +1,7 @@
 package cl.set.junit5;
 import org.junit.jupiter.api.*;
 
-public class AnotacionesBasicas {
+public class TestsConAnotacionesBasicas {
     Core calculadora = new Core();
     @BeforeAll
     static void setup(){
