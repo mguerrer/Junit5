@@ -3,8 +3,8 @@
  * Fecha: 31-07-2020
  * 
  * Requiere agregar a dependencias Maven
- * - org.junit.jupiter.params.ParameterizedTest 
- * - junit-jupiter-params
+ * import org.junit.jupiter.params.ParameterizedTest;
+ *  import org.junit.jupiter.params.provider.CsvSource;
  * https://junit.org/junit5/docs/snapshot/user-guide/#writing-tests-parameterized-tests-sources-CsvSource
  */
 
@@ -22,7 +22,7 @@ class TestParametrizados {
 
 	@Test
 	@DisplayName("1 + 1 = 2")
-	void addsTwoNumbers() {
+	void SumaDosNúmeros() {
 		final Core calculadora = new Core();
 		assertEquals(2, calculadora.Suma(1, 1), ()-> "1 + 1 debe ser igual a 2");
 	}
@@ -30,7 +30,7 @@ class TestParametrizados {
 	@ParameterizedTest(name = "{0} + {1} = {2}")
 	@DisplayName("Prueba con fuente fija")
 	@CsvSource({ "0,    1,   1", "1,    2,   3", "49,  51, 100", "1,  100, 101" })
-	void add(final int primer, final int segundo, final int resultadoEsperado) {
+	void SumaListaDeNumeros(final int primer, final int segundo, final int resultadoEsperado) {
 		final Core calculadora = new Core();
 		System.out.println(primer + " + " + segundo + " debe ser igual a " + resultadoEsperado);
 		assertEquals(resultadoEsperado, calculadora.Suma(primer, segundo),
@@ -42,5 +42,14 @@ class TestParametrizados {
 	@CsvFileSource(resources = "/usuarios.csv", numLinesToSkip = 1)
 	void testWithCsvFileSourceFromFile(final String nombre, final String apellidos) {
 		System.out.println("Usuario:"+nombre+" "+apellidos);
+		/* Agregue aquí lo que desee hacer con los datos del archivo. */
+	}
+
+	@ParameterizedTest
+	@DisplayName("Prueba con otro archivo .csv delimitado con $")
+	@CsvFileSource(resources = "/books.csv", numLinesToSkip = 1, delimiter='$')
+	void testWithOtherCsvFileSourceFromFile(final String nombre, final String autor) {
+		System.out.println("Libro:"+nombre+" Autor:"+autor);
+		/* Agregue aquí lo que desee hacer con los datos del archivo. */
 	}
 }
