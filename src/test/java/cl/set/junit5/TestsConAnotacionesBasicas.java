@@ -31,6 +31,12 @@ public class TestsConAnotacionesBasicas {
         System.out.println("======TEST 2 ejecutado=======");
         Assertions.assertEquals( 6 , calculadora.Suma(2, 4));
     }
+
+    @RepeatedTest(5)
+    void sumaRepetida(TestInfo testInfo) {
+        System.out.println(testInfo.getTestMethod().toString()+"-"+ testInfo.getDisplayName());
+        Assertions.assertEquals(2, calculadora.Suma(1, 1), "1 + 1 debe ser 2");
+    }
      
     @AfterEach
     void tearThis(){
