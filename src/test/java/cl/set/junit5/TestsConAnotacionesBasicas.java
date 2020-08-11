@@ -2,7 +2,7 @@ package cl.set.junit5;
 import org.junit.jupiter.api.*;
 
 public class TestsConAnotacionesBasicas {
-    Core calculadora = new Core();
+    Calculadora calculadora = new Calculadora();
     @BeforeAll
     static void setup(){
         System.out.println("@BeforeAll ejecutado");

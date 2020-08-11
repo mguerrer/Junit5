@@ -1,7 +1,7 @@
 package cl.set.junit5;
 
-public class Core {
-    public Core(){
+public class Calculadora {
+    public Calculadora(){
     }
     public double Suma( final double x, final double y) {
         return x + y;
@@ -16,9 +16,9 @@ public class Core {
     }
 
     public double Divide(final double x, final double y) {
-        if ( y != 0 )
-            return x/y;
-        else
-            return Double.POSITIVE_INFINITY;
+        return x/y;
+    }
+    public double Divide(int x, int y) {
+        return x/y;
     }
 }

@@ -23,7 +23,7 @@ public class TestsParametrizados {
 	@Test
 	@DisplayName("1 + 1 = 2")
 	void SumaDosNúmeros() {
-		final Core calculadora = new Core();
+		final Calculadora calculadora = new Calculadora();
 		assertEquals(2, calculadora.Suma(1, 1), ()-> "1 + 1 debe ser igual a 2");
 	}
 
@@ -31,7 +31,7 @@ public class TestsParametrizados {
 	@ParameterizedTest(name = "{0} + {1} = {2}")
 	@CsvSource({ "0,    1,   1", "1,    2,   3", "49,  51, 100", "1,  100, 101" })
 	void SumaListaDeNumeros(final int primer, final int segundo, final int resultadoEsperado) {
-		final Core calculadora = new Core();
+		final Calculadora calculadora = new Calculadora();
 		System.out.println(primer + " + " + segundo + " debe ser igual a " + resultadoEsperado);
 		assertEquals(resultadoEsperado, calculadora.Suma(primer, segundo),
 				() -> primer + " + " + segundo + " debe ser igual a " + resultadoEsperado);
