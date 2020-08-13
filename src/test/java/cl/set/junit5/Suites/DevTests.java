@@ -7,11 +7,20 @@
  */
 package cl.set.junit5.Suites;
 
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-// Estas anotaciones
-/*@ExtendWith(JUnitPlatform.class)
-@SelectClasses( TestsConAnotacionesBasicas.class )
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.platform.suite.api.SelectClasses;
+import org.junit.platform.suite.api.SelectPackages;
+import org.junit.platform.suite.api.SuiteDisplayName;
+import org.junit.runner.RunWith;
+
+import cl.set.junit5.AnidadosTests;
+import cl.set.junit5.ConAnotacionesBasicasTests;
+
+@RunWith(JUnitPlatform.class)
+@SuiteDisplayName("Ejecución en ambiente DEV")
+@SelectClasses({ConAnotacionesBasicasTests.class, AnidadosTests.class})
 public class DevTests {
-    
-}*/
+    DevTests(){
+
+    }
+}
