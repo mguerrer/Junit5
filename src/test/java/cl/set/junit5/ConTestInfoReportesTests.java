@@ -22,8 +22,8 @@ import org.junit.jupiter.api.TestInstance.Lifecycle;
 @TestInstance(Lifecycle.PER_CLASS)
 @DisplayName("Demuestra TestInfo, TestReporter")
 
-public class TestsConTestInfoReportes {
-    TestsConTestInfoReportes(TestInfo testInfo, TestReporter testReporter) {
+public class ConTestInfoReportesTests {
+    ConTestInfoReportesTests(TestInfo testInfo, TestReporter testReporter) {
         System.out.println("Constructor de:"+testInfo.getDisplayName());
         testReporter.publishEntry("REPORTE->Se inicia prueba de clase:"+testInfo.getDisplayName());
         assertEquals("Demuestra TestInfo, TestReporter", testInfo.getDisplayName());

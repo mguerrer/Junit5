@@ -14,7 +14,7 @@ import org.junit.jupiter.api.TestMethodOrder;
 
 // Aquí definimos uso de ordenador random.
 @TestMethodOrder(Random.class)
-public class TestOrdenadosRandom {
+public class OrdenadosRandomTests {
     @Test
     void pruebaUno() {
         System.out.println("======TEST 1 ejecutado=======");

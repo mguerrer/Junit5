@@ -12,7 +12,7 @@ import static java.time.Duration.ofMinutes;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-public class TestConAfirmaciones {
+public class ConAfirmacionesTests {
     private final Calculadora Calculadora = new Calculadora();
     private final Persona person = new Persona("Jane", "Doe");
 
@@ -91,7 +91,7 @@ public class TestConAfirmaciones {
         });
         assertEquals("un resultado cualquiera", Resultado);
         // En esta versión se invoca una referencia a un método y se retorna el valor devuelto por él.
-        String saludo = assertTimeout(ofMinutes(2), TestConAfirmaciones::greeting);
+        String saludo = assertTimeout(ofMinutes(2), ConAfirmacionesTests::greeting);
         assertEquals("Saludos!", saludo);
     }
 

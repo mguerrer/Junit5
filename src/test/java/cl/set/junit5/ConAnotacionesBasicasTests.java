@@ -11,7 +11,7 @@ import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.TestInstance.Lifecycle;
 // Indica que la clase se crea y ejecuta una sola vez.
 @TestInstance(Lifecycle.PER_CLASS)
-public class TestsConAnotacionesBasicas {
+public class ConAnotacionesBasicasTests {
     Calculadora calculadora = new Calculadora();
     @BeforeAll
     static void setup(){

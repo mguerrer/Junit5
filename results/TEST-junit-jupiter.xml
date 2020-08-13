@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JUnit Jupiter" tests="37" skipped="1" failures="0" errors="0" time="0.284" hostname="MGUERRERO" timestamp="2020-08-13T17:32:50">
+<properties>
+<property name="file.encoding" value="Cp1252"/>
+<property name="file.separator" value="\"/>
+<property name="java.class.path" value="c:\set\bin\junit-platform-console-standalone-1.6.2.jar"/>
+<property name="java.class.version" value="57.0"/>
+<property name="java.home" value="D:\Program Files\Java"/>
+<property name="java.io.tmpdir" value="C:\Users\ROG\AppData\Local\Temp\"/>
+<property name="java.library.path" value="D:\Program Files\Java\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python38\Scripts\;C:\Python38\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft Emulator Manager\1.0\;D:\Program Files\Java\bin;D:\Program Files\apache-maven-3.6.3\bin;C:\Program Files (x86)\WinMerge;C:\Program Files\Gauge\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\PPMergePresentations;C:\Program Files (x86)\Google\Chrome\Application;C:\Users\ROG\AppData\Local\Programs\Opera;C:\Program Files\Internet Explorer\;C:\set\bin;D:\Program Files\NodeJS\;C:\Users\ROG\AppData\Roaming\npm;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\ROG\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Java\bin;C:\Users\ROG\AppData\Local\GitHubDesktop\bin;C:\Users\ROG\.dotnet\tools;C:\Program Files\Fiddler;C:\SET\Bin\node;c:\SET\Bin\;C:\Program Files (x86)\Google\Chrome\Application;C:\Users\ROG\AppData\Local\Programs\Opera;C:\Program Files\Internet Explorer\;C:\Program Files (x86)\Google\Chrome\Application;C:\Users\ROG\AppData\Local\Programs\Opera;C:\Program Files\Internet Explorer\;C:\Program Files (x86)\Google\Chrome\Application;C:\Users\ROG\AppData\Local\Programs\Opera;C:\Program Files\Internet Explorer\;C:\set\bin;D:\Program Files\sonarqube-8.3.1.34397\bin\windows-x86-64;C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin;;C:\set\bin;c:\SET\Bin;c:\SET\Bin;c:\SET\Bin\node;c:\SET\Bin;c:\SET\Bin\node;C:\Users\ROG\AppData\Roaming\npm;C:\Users\ROG\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ROG\.dotnet\tools;."/>
+<property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+<property name="java.runtime.version" value="13.0.2+8"/>
+<property name="java.specification.name" value="Java Platform API Specification"/>
+<property name="java.specification.vendor" value="Oracle Corporation"/>
+<property name="java.specification.version" value="13"/>
+<property name="java.vendor" value="Oracle Corporation"/>
+<property name="java.vendor.url" value="https://java.oracle.com/"/>
+<property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+<property name="java.version" value="13.0.2"/>
+<property name="java.version.date" value="2020-01-14"/>
+<property name="java.vm.compressedOopsMode" value="Zero based"/>
+<property name="java.vm.info" value="mixed mode, sharing"/>
+<property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+<property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+<property name="java.vm.specification.version" value="13"/>
+<property name="java.vm.vendor" value="Oracle Corporation"/>
+<property name="java.vm.version" value="13.0.2+8"/>
+<property name="jdk.debug" value="release"/>
+<property name="line.separator" value="
+"/>
+<property name="os.arch" value="amd64"/>
+<property name="os.name" value="Windows 10"/>
+<property name="os.version" value="10.0"/>
+<property name="path.separator" value=";"/>
+<property name="sun.arch.data.model" value="64"/>
+<property name="sun.boot.library.path" value="D:\Program Files\Java\bin"/>
+<property name="sun.cpu.endian" value="little"/>
+<property name="sun.cpu.isalist" value="amd64"/>
+<property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+<property name="sun.java.command" value="c:\set\bin\junit-platform-console-standalone-1.6.2.jar --classpath target/test-classes --classpath target/classes --reports-dir=results --scan-classpath"/>
+<property name="sun.java.launcher" value="SUN_STANDARD"/>
+<property name="sun.jnu.encoding" value="Cp1252"/>
+<property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+<property name="sun.os.patch.level" value=""/>
+<property name="sun.stderr.encoding" value="cp850"/>
+<property name="sun.stdout.encoding" value="cp850"/>
+<property name="user.country" value="CL"/>
+<property name="user.dir" value="C:\set\temp\Junit5"/>
+<property name="user.home" value="C:\Users\ROG"/>
+<property name="user.language" value="es"/>
+<property name="user.name" value="ROG"/>
+<property name="user.script" value=""/>
+<property name="user.timezone" value="America/Santiago"/>
+<property name="user.variant" value=""/>
+</properties>
+<testcase name="afirmacionesDeResultadoYTiempo()" classname="cl.set.junit5.ConAfirmacionesTests" time="0.016">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ConAfirmacionesTests]/[method:afirmacionesDeResultadoYTiempo()]
+display-name: afirmacionesDeResultadoYTiempo()
+]]></system-out>
+</testcase>
+<testcase name="afirmacionesDeExcepciones()" classname="cl.set.junit5.ConAfirmacionesTests" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ConAfirmacionesTests]/[method:afirmacionesDeExcepciones()]
+display-name: afirmacionesDeExcepciones()
+]]></system-out>
+</testcase>
+<testcase name="afirmacionesDeTiempoMaximo()" classname="cl.set.junit5.ConAfirmacionesTests" time="0.009">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ConAfirmacionesTests]/[method:afirmacionesDeTiempoMaximo()]
+display-name: afirmacionesDeTiempoMaximo()
+]]></system-out>
+</testcase>
+<testcase name="afirmacionesAgrupadas()" classname="cl.set.junit5.ConAfirmacionesTests" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ConAfirmacionesTests]/[method:afirmacionesAgrupadas()]
+display-name: afirmacionesAgrupadas()
+]]></system-out>
+</testcase>
+<testcase name="afirmacionesNormales()" classname="cl.set.junit5.ConAfirmacionesTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ConAfirmacionesTests]/[method:afirmacionesNormales()]
+display-name: afirmacionesNormales()
+]]></system-out>
+</testcase>
+<testcase name="afirmacionesDependientes()" classname="cl.set.junit5.ConAfirmacionesTests" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ConAfirmacionesTests]/[method:afirmacionesDependientes()]
+display-name: afirmacionesDependientes()
+]]></system-out>
+</testcase>
+<testcase name="testCalcOne()" classname="cl.set.junit5.ConAnotacionesBasicasTests" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ConAnotacionesBasicasTests]/[method:testCalcOne()]
+display-name: Suma 2+2 en DEV
+]]></system-out>
+</testcase>
+<testcase name="testCalcTwo()" classname="cl.set.junit5.ConAnotacionesBasicasTests" time="0">
+<skipped><![CDATA[void cl.set.junit5.ConAnotacionesBasicasTests.testCalcTwo() is @Disabled]]></skipped>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ConAnotacionesBasicasTests]/[method:testCalcTwo()]
+display-name: Suma 2+4 en PROD
+]]></system-out>
+</testcase>
+<testcase name="sumaRepetida(TestInfo)[1]" classname="cl.set.junit5.ConAnotacionesBasicasTests" time="0.008">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ConAnotacionesBasicasTests]/[test-template:sumaRepetida(org.junit.jupiter.api.TestInfo)]/[test-template-invocation:#1]
+display-name: repetition 1 of 5
+]]></system-out>
+</testcase>
+<testcase name="sumaRepetida(TestInfo)[2]" classname="cl.set.junit5.ConAnotacionesBasicasTests" time="0.008">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ConAnotacionesBasicasTests]/[test-template:sumaRepetida(org.junit.jupiter.api.TestInfo)]/[test-template-invocation:#2]
+display-name: repetition 2 of 5
+]]></system-out>
+</testcase>
+<testcase name="sumaRepetida(TestInfo)[3]" classname="cl.set.junit5.ConAnotacionesBasicasTests" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ConAnotacionesBasicasTests]/[test-template:sumaRepetida(org.junit.jupiter.api.TestInfo)]/[test-template-invocation:#3]
+display-name: repetition 3 of 5
+]]></system-out>
+</testcase>
+<testcase name="sumaRepetida(TestInfo)[4]" classname="cl.set.junit5.ConAnotacionesBasicasTests" time="0.01">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ConAnotacionesBasicasTests]/[test-template:sumaRepetida(org.junit.jupiter.api.TestInfo)]/[test-template-invocation:#4]
+display-name: repetition 4 of 5
+]]></system-out>
+</testcase>
+<testcase name="sumaRepetida(TestInfo)[5]" classname="cl.set.junit5.ConAnotacionesBasicasTests" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ConAnotacionesBasicasTests]/[test-template:sumaRepetida(org.junit.jupiter.api.TestInfo)]/[test-template-invocation:#5]
+display-name: repetition 5 of 5
+]]></system-out>
+</testcase>
+<testcase name="SumaDosNúmeros()" classname="cl.set.junit5.ParametrizadosTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ParametrizadosTests]/[method:SumaDosNúmeros()]
+display-name: 1 + 1 = 2
+]]></system-out>
+</testcase>
+<testcase name="testWithCsvFileSourceFromFile(String, String)[1]" classname="cl.set.junit5.ParametrizadosTests" time="0.012">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ParametrizadosTests]/[test-template:testWithCsvFileSourceFromFile(java.lang.String, java.lang.String)]/[test-template-invocation:#1]
+display-name: Usuario Marcos Guerrero Wilson
+]]></system-out>
+</testcase>
+<testcase name="testWithCsvFileSourceFromFile(String, String)[2]" classname="cl.set.junit5.ParametrizadosTests" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ParametrizadosTests]/[test-template:testWithCsvFileSourceFromFile(java.lang.String, java.lang.String)]/[test-template-invocation:#2]
+display-name: Usuario Jose De San Martin
+]]></system-out>
+</testcase>
+<testcase name="SumaListaDeNumeros(int, int, int)[1]" classname="cl.set.junit5.ParametrizadosTests" time="0.005">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ParametrizadosTests]/[test-template:SumaListaDeNumeros(int, int, int)]/[test-template-invocation:#1]
+display-name: 0 + 1 = 1
+]]></system-out>
+</testcase>
+<testcase name="SumaListaDeNumeros(int, int, int)[2]" classname="cl.set.junit5.ParametrizadosTests" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ParametrizadosTests]/[test-template:SumaListaDeNumeros(int, int, int)]/[test-template-invocation:#2]
+display-name: 1 + 2 = 3
+]]></system-out>
+</testcase>
+<testcase name="SumaListaDeNumeros(int, int, int)[3]" classname="cl.set.junit5.ParametrizadosTests" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ParametrizadosTests]/[test-template:SumaListaDeNumeros(int, int, int)]/[test-template-invocation:#3]
+display-name: 49 + 51 = 100
+]]></system-out>
+</testcase>
+<testcase name="SumaListaDeNumeros(int, int, int)[4]" classname="cl.set.junit5.ParametrizadosTests" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ParametrizadosTests]/[test-template:SumaListaDeNumeros(int, int, int)]/[test-template-invocation:#4]
+display-name: 1 + 100 = 101
+]]></system-out>
+</testcase>
+<testcase name="testWithOtherCsvFileSourceFromFile(String, String)[1]" classname="cl.set.junit5.ParametrizadosTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ParametrizadosTests]/[test-template:testWithOtherCsvFileSourceFromFile(java.lang.String, java.lang.String)]/[test-template-invocation:#1]
+display-name: Libro=Testing moderno Autor=Marcos Guerrero Wilson
+]]></system-out>
+</testcase>
+<testcase name="testWithOtherCsvFileSourceFromFile(String, String)[2]" classname="cl.set.junit5.ParametrizadosTests" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ParametrizadosTests]/[test-template:testWithOtherCsvFileSourceFromFile(java.lang.String, java.lang.String)]/[test-template-invocation:#2]
+display-name: Libro=Libertadores Autor=Jose De San Martin
+]]></system-out>
+</testcase>
+<testcase name="pruebaDos()" classname="cl.set.junit5.OrdenadosRandomTests" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.OrdenadosRandomTests]/[method:pruebaDos()]
+display-name: pruebaDos()
+]]></system-out>
+</testcase>
+<testcase name="pruebaUno()" classname="cl.set.junit5.OrdenadosRandomTests" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.OrdenadosRandomTests]/[method:pruebaUno()]
+display-name: pruebaUno()
+]]></system-out>
+</testcase>
+<testcase name="pruebaTres()" classname="cl.set.junit5.OrdenadosRandomTests" time="0.006">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.OrdenadosRandomTests]/[method:pruebaTres()]
+display-name: pruebaTres()
+]]></system-out>
+</testcase>
+<testcase name="pruebaTres()" classname="cl.set.junit5.OrdenadosAlRevesTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.OrdenadosAlRevesTests]/[method:pruebaTres()]
+display-name: pruebaTres()
+]]></system-out>
+</testcase>
+<testcase name="pruebaDos()" classname="cl.set.junit5.OrdenadosAlRevesTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.OrdenadosAlRevesTests]/[method:pruebaDos()]
+display-name: pruebaDos()
+]]></system-out>
+</testcase>
+<testcase name="pruebaUno()" classname="cl.set.junit5.OrdenadosAlRevesTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.OrdenadosAlRevesTests]/[method:pruebaUno()]
+display-name: pruebaUno()
+]]></system-out>
+</testcase>
+<testcase name="isInstantiatedWithNew()" classname="cl.set.junit5.AnidadosTests" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.AnidadosTests]/[method:isInstantiatedWithNew()]
+display-name: se instancia con un nuevo Stack()
+]]></system-out>
+</testcase>
+<testcase name="estaVacio()" classname="cl.set.junit5.AnidadosTests$CuandoEsNuevo" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.AnidadosTests]/[nested-class:CuandoEsNuevo]/[method:estaVacio()]
+display-name: está vacía
+]]></system-out>
+</testcase>
+<testcase name="lanzaExcepcionEnPopVacio()" classname="cl.set.junit5.AnidadosTests$CuandoEsNuevo" time="0.003">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.AnidadosTests]/[nested-class:CuandoEsNuevo]/[method:lanzaExcepcionEnPopVacio()]
+display-name: Lanza excepción EmptyStackException cuando se intenta sacar
+]]></system-out>
+</testcase>
+<testcase name="lanzaExcepcionAlMirar()" classname="cl.set.junit5.AnidadosTests$CuandoEsNuevo" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.AnidadosTests]/[nested-class:CuandoEsNuevo]/[method:lanzaExcepcionAlMirar()]
+display-name: Lanza excepción  EmptyStackException cuando se hace peek
+]]></system-out>
+</testcase>
+<testcase name="retornaElementoAlTomarlo()" classname="cl.set.junit5.AnidadosTests$CuandoEsNuevo$LuegoDeAgregarElemento" time="0.001">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.AnidadosTests]/[nested-class:CuandoEsNuevo]/[nested-class:LuegoDeAgregarElemento]/[method:retornaElementoAlTomarlo()]
+display-name: saca el elemento cuando el elemento es tomado y ve que stack está vacío de nuevo
+]]></system-out>
+</testcase>
+<testcase name="noEstaVacio()" classname="cl.set.junit5.AnidadosTests$CuandoEsNuevo$LuegoDeAgregarElemento" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.AnidadosTests]/[nested-class:CuandoEsNuevo]/[nested-class:LuegoDeAgregarElemento]/[method:noEstaVacio()]
+display-name: ya no debe estar vacía
+]]></system-out>
+</testcase>
+<testcase name="retornaElementoAlMirarlo()" classname="cl.set.junit5.AnidadosTests$CuandoEsNuevo$LuegoDeAgregarElemento" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.AnidadosTests]/[nested-class:CuandoEsNuevo]/[nested-class:LuegoDeAgregarElemento]/[method:retornaElementoAlMirarlo()]
+display-name: retorna el elemento al mirar el elemento pero stack no debe estar vacío.
+]]></system-out>
+</testcase>
+<testcase name="test1(TestInfo)" classname="cl.set.junit5.ConTestInfoReportesTests" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ConTestInfoReportesTests]/[method:test1(org.junit.jupiter.api.TestInfo)]
+display-name: TEST 1
+]]></system-out>
+<system-out><![CDATA[
+Report Entry #1 (timestamp: 2020-08-13T17:32:50.3734607)
+	- value: Ejecutando Before de:TEST 1
+]]></system-out>
+</testcase>
+<testcase name="test2(TestInfo)" classname="cl.set.junit5.ConTestInfoReportesTests" time="0.002">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:cl.set.junit5.ConTestInfoReportesTests]/[method:test2(org.junit.jupiter.api.TestInfo)]
+display-name: test2(TestInfo)
+]]></system-out>
+<system-out><![CDATA[
+Report Entry #1 (timestamp: 2020-08-13T17:32:50.3754593)
+	- value: Ejecutando Before de:test2(TestInfo)
+]]></system-out>
+</testcase>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]
+display-name: JUnit Jupiter
+]]></system-out>
+</testsuite>

@@ -18,7 +18,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-public class TestsParametrizados {
+public class ParametrizadosTests {
 
 	@Test
 	@DisplayName("1 + 1 = 2")

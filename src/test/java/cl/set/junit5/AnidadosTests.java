@@ -20,7 +20,7 @@ import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 @DisplayName("Un stack")
-public class TestAnidados {
+public class AnidadosTests {
     
     Stack<Object> stack;
 

@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
 @TestMethodOrder(OrderAnnotation.class)
-public class TestOrdenadosAlReves {
+public class OrdenadosAlRevesTests {
     @Test
     @Order(3)
     void pruebaUno() {
