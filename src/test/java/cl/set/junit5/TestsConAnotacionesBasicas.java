@@ -1,6 +1,16 @@
+/* Ejemplos de uso de las anotaciones básicas de JUNit5.
+ * Autor: Marcos Guerrero
+ * Fecha: 13-08-2020
+ * 
+ * Requiere agregar a dependencias Maven
+ * import org.junit.jupiter.api.TestInfo;
+ * import org.junit.jupiter.api.TestInstance.Lifecycle;
+ */
 package cl.set.junit5;
 import org.junit.jupiter.api.*;
-
+import org.junit.jupiter.api.TestInstance.Lifecycle;
+// Indica que la clase se crea y ejecuta una sola vez.
+@TestInstance(Lifecycle.PER_CLASS)
 public class TestsConAnotacionesBasicas {
     Calculadora calculadora = new Calculadora();
     @BeforeAll

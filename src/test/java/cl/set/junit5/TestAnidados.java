@@ -19,13 +19,13 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-@DisplayName("A stack")
+@DisplayName("Un stack")
 public class TestAnidados {
     
     Stack<Object> stack;
 
     @Test
-    @DisplayName("is instantiated with new Stack()")
+    @DisplayName("se instancia con un nuevo Stack()")
     void isInstantiatedWithNew() {
         new Stack<>();
     }
