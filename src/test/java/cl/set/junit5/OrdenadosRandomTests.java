@@ -9,6 +9,7 @@
  */
 package cl.set.junit5;
 import org.junit.jupiter.api.MethodOrderer.Random;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
@@ -16,18 +17,19 @@ import org.junit.jupiter.api.TestMethodOrder;
 @TestMethodOrder(Random.class)
 public class OrdenadosRandomTests {
     @Test
+    @Tag("DEV")
     void pruebaUno() {
-        System.out.println("======TEST 1 ejecutado=======");
+        System.out.println("======Prueba 1 ejecutada=======");
     }
 
     @Test
     void pruebaDos() {
-        System.out.println("======TEST 2 ejecutado=======");
+        System.out.println("======Prueba 2 ejecutada=======");
     }
 
     @Test
     void pruebaTres() {
-        System.out.println("======TEST 3 ejecutado=======");
+        System.out.println("======Prueba 3 ejecutada=======");
     }
     
 }

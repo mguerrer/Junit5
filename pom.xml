@@ -8,27 +8,27 @@
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>5.6.2</junit.version>
+    <junit.platform.version>1.6.2</junit.platform.version>
   </properties>
 
-  <dependencies>
-
+  <dependencies> <!-- Librerías a descargar. -->
+    <!-- Junit Platform -->
     <dependency>
       <groupId>org.junit.platform</groupId>
       <artifactId>junit-platform-runner</artifactId>
-      <version>1.7.0-M1</version>
+      <version>${junit.platform.version}</version>
     </dependency>
-
 
     <dependency>
       <groupId>org.junit.platform</groupId>
       <artifactId>junit-platform-console-standalone</artifactId>
-      <version>1.6.2</version>
+      <version>${junit.platform.version}</version>
     </dependency>
-
+    <!-- Junit Jupiter -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-params</artifactId>
-      <version>5.7.0-M1</version>
+      <version>${junit.version}</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -44,28 +44,25 @@
     </dependency>
   </dependencies>
 
-    <build>
-        <plugins>
+  <build>
+    <plugins>
+      <plugin> <!-- Agrega plugin Surefire para ejecución. http://maven.apache.org/surefire/maven-surefire-plugin/examples/junit-platform.html -->
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.0.0-M3</version>
+      </plugin>
 
-            <!-- Need at least 2.22.0 to support JUnit 5 -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M3</version>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-
-        </plugins>
-    </build>
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.1</version>
+          <configuration>
+              <source>1.8</source>
+              <target>1.8</target>
+          </configuration>
+      </plugin>
+    </plugins>
+  </build>
 
 	<reporting>
 		<plugins>
