@@ -26,3 +26,5 @@ buildNumber.properties
 .factorypath
 .project
 results/*.xml
+results/TEST-junit-jupiter.xml
+results/TEST-junit-vintage.xml

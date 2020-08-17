@@ -1,17 +1,21 @@
 {
     "java.test.config": [
     {
-        "name": "myConfiguration",
+        "name": "PorDefecto",
         "workingDirectory": "${workspaceFolder}",
         "args": [ "-c", "com.test" ],
         "vmargs": [ "-Xmx512M" ],
         "env": { "key": "value" },
     },
     {
-        "name": "myConfiguration2",
+        "name": "Paralela",
         "workingDirectory": "${workspaceFolder}",
         "args": [ "-c", "com.test" ],
         "vmargs": [ "-Xmx512M" ],
-        "env": { "key": "value" },
+        "env": { "junit.jupiter.execution.parallel.enabled": "true",
+                 "junit.jupiter.execution.parallel.mode.default":"concurrent" },
     },
- ]}
+],
+"java.test.defaultConfig": "PorDefecto",
+"java.configuration.updateBuildConfiguration": "interactive"
+}

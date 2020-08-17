@@ -18,8 +18,9 @@ import org.junit.jupiter.api.TestReporter;
 @SelectPackages("cl.set.junit5") // Tome todas las clases en el paquete cl.set.JUnit5.
 @IncludeTags("DEV") // Incluya todas las pruebas con el TAG DEV
 @IncludeEngines("junit-jupiter") // Use la máquina de ejecución de JUNit5.
+@Timeout(10) // Establece tiempo máximo de ejecución.
 public class DevTests{ // Los métodos son ignorados en ejecución.
-    DevTests( TestInfo testInfo, TestReporter testReporter) {
+    DevTests( final TestInfo testInfo, final TestReporter testReporter) {
         System.out.println(testInfo.getDisplayName());
         testReporter.publishEntry(testInfo.getDisplayName());
     }
