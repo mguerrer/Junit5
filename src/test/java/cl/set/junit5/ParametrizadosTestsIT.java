@@ -18,8 +18,8 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import org.junit.jupiter.params.provider.CsvFileSource;
 
-
-public class ParametrizadosTests {
+@Tag("Integracion")
+public class ParametrizadosTestsIT {
 
 	@Test
 	@DisplayName("1 + 1 = 2")
@@ -29,6 +29,7 @@ public class ParametrizadosTests {
 	}
 
 	@DisplayName("Prueba con fuente fija")
+	@Tag("Integracion")
 	@ParameterizedTest(name = "{0} + {1} = {2}")
 	@CsvSource({ "0,    1,   1", "1,    2,   3", "49,  51, 100", "1,  100, 101" })
 	void SumaListaDeNumeros(final int primer, final int segundo, final int resultadoEsperado) {
