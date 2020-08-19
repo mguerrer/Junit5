@@ -78,7 +78,7 @@ public class ConAfirmacionesTests {
         // Útiles para pruebas de performance.
         // La siguiente afirmación falla.
         assertTimeout(Duration.ofMillis(10), () -> {
-            // Demora poco más de un minuto.
+            // Demora poco menos de los 10 milisegundos.  Esto puede fallar en algunas condiciones.
             Thread.sleep(8);
         });
     }

@@ -13,6 +13,9 @@ import org.junit.jupiter.api.TestInstance.Lifecycle;
 @TestInstance(Lifecycle.PER_CLASS)
 public class ConAnotacionesBasicasTests {
     Calculadora calculadora = new Calculadora();
+    ConAnotacionesBasicasTests(){ // Constructor de la clase.
+        System.out.println("CONSTRUCTOR ejecutado");
+    }
     @BeforeAll
     static void setup(){
         System.out.println("@BeforeAll ejecutado");
