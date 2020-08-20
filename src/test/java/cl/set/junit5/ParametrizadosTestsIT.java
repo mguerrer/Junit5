@@ -9,18 +9,15 @@
  */
 
 package cl.set.junit5;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-
-
 import org.junit.jupiter.params.provider.CsvFileSource;
 
 @Tag("Integracion")
 public class ParametrizadosTestsIT {
-
 	@Test
 	@DisplayName("1 + 1 = 2")
 	void SumaDosNúmeros() {
@@ -53,5 +50,8 @@ public class ParametrizadosTestsIT {
 	void testWithOtherCsvFileSourceFromFile(final String nombre, final String autor) {
 		System.out.println("Libro:"+nombre+" Autor:"+autor);
 		/* Agregue aquí lo que desee hacer con los datos del archivo. */
+	}
+	@BeforeEach void MiThread(){
+		System.out.println("Thread="+java.lang.Thread.activeCount());
 	}
 }

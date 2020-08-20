@@ -5,8 +5,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
 import org.junit.platform.suite.api.ExcludeTags;
-import org.junit.platform.suite.api.IncludeTags;
 
+@Tag("Suite")
 @Tag("regresion")
 @ExcludeTags("seguridad") // No tiene efecto
 @Execution(ExecutionMode.CONCURRENT) 

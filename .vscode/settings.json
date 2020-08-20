@@ -12,8 +12,9 @@
         "workingDirectory": "${workspaceFolder}",
         "args": [ "-c", "com.test" ],
         "vmargs": [ "-Xmx512M" ],
-        "env": { "junit.jupiter.execution.parallel.enabled": "true",
-                 "junit.jupiter.execution.parallel.mode.default":"concurrent" },
+        "env": { "junit.jupiter.execution.parallel.enabled":"true",
+                 "junit.jupiter.execution.parallel.mode.default":"concurrent",
+                 "junit.jupiter.execution.parallel.mode.classes.default":"same_thread"},
     },
     {
         "name": "Regresion",
@@ -25,5 +26,4 @@
     },
 ],
 "java.configuration.updateBuildConfiguration": "interactive",
-"java.test.defaultConfig": "PorDefecto"
 }
