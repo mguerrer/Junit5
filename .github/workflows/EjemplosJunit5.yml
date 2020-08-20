@@ -20,5 +20,9 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Build with Maven
+    - name: Test unitarios con Maven
+      run: mvn -B test --file pom.xml
+    - name: Test integración con Maven
+      run: mvn -B integration-test --file pom.xml
+    - name: Generación del JAR
       run: mvn -B package --file pom.xml
