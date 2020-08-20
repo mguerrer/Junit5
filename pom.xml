@@ -13,13 +13,7 @@
   </properties>
 
   <dependencies>
-
-    <dependency>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-failsafe-plugin</artifactId>
-      <version>${maven.failsafe.version}</version>
-    </dependency>
- <!-- Librerías a descargar. -->
+    <!-- Librerías a descargar. -->
     <!-- Junit Platform -->
     <dependency>
       <groupId>org.junit.platform</groupId>
@@ -49,6 +43,12 @@
       <artifactId>junit-jupiter-engine</artifactId>
       <version>${junit.version}</version>
       <scope>test</scope>
+    </dependency>
+    <!--Failsafe para test integrado.-->
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-failsafe-plugin</artifactId>
+      <version>${maven.failsafe.version}</version>
     </dependency>
     <!-- Vintage Module to run JUnit4 from JUnit 5 -->
     <dependency>
@@ -83,22 +83,23 @@
           <executions>
               <execution>
                   <goals>
-                    <goal>integration-test</goal>
+                    <goal>integration-test</goal> <!-- test es la meta del testing integrado. -->
                     <goal>verify</goal>
                   </goals>
               </execution>
           </executions>
           <configuration>
-              <groups>Integracion</groups>
-                <!--<properties>
-                  <configurationParameters>
-                    junit.jupiter.conditions.deactivate = *
-                      junit.jupiter.extensions.autodetection.enabled = false
-                      junit.jupiter.testinstance.lifecycle.default = per_class
-                      junit.jupiter.execution.parallel.enabled = true
-                  </configurationParameters>
-              </properties>
-               -->
+            <skip>true</skip>
+            <groups>Integracion</groups>
+              <!--<properties>
+                <configurationParameters>
+                  junit.jupiter.conditions.deactivate = *
+                  junit.jupiter.extensions.autodetection.enabled = false
+                  junit.jupiter.testinstance.lifecycle.default = per_class
+                  junit.jupiter.execution.parallel.enabled = true
+                </configurationParameters>
+            </properties>
+              -->
           </configuration>
           
       </plugin>
