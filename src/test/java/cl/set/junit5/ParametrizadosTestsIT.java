@@ -14,6 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
 @Tag("Integracion")
@@ -53,5 +54,20 @@ public class ParametrizadosTestsIT {
 	}
 	@BeforeEach void MiThread(){
 		System.out.println("Thread="+java.lang.Thread.activeCount());
+	}
+	public static Object[] strings() {
+		return new Object[][] { //
+				{ "str", true }, //
+				{ "str", true }, //
+				{ "str", false }, //
+				{ "exactly 5 objects", false }, //
+				{ "at least 5 objects", false }, //
+				{ "\"more than\" 5 objects", false },//
+		};
+	}
+	@ParameterizedTest
+	@MethodSource("strings")
+	void stringsMethodSource(String str, boolean trueFalse) {
+		System.out.println("Datos="+str+"  Boolean="+trueFalse);
 	}
 }

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ReadDataFromExcel",
+            "request": "launch",
+            "mainClass": "cl.set.junit5.ReadDataFromExcel",
+            "projectName": "ejemplos"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
